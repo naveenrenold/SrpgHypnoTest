@@ -1506,6 +1506,11 @@ var UnitProvider = {
 			oldHp = unit.getHp();
 			this.recoveryUnit(unit);
 			this._resetPos(unit);
+			// In the recoveryUnit, AliveType.INJURY changes to AliveType.ALIVE, with the intention of enumerating units in getAliveList.
+			// By deliberately keeping them in a alive state, units appear in lists such as the "Unit Marshal" screen.
+			// However, since it is necessary to have an indication that the unit is injured, the HP is set based on what has been backed up in advance.
+			// The HP when injured is 0, so the unit's HP becomes 0.(ChronicInjuryHp.ZERO)
+			// This mechanism creates the concept of incapacitated unit(unable to sortie with 0 HP).
 			unit.setHp(oldHp);
 		}
 	},
