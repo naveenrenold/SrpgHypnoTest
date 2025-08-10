@@ -1,0 +1,44 @@
+okay things to do:
+1. Event -> battle seamless - done
+
+opening events are before map starts - conversations
+auto events can happen after map start - map events based on conditions like map start , turn etc
+bookmarks for common data
+
+
+2. what does EV enemy mean compared to regular enemies - event enemies
+
+3. what do do
+ -> add skills 
+ -> balance to always 2 shot and not get 2 shot
+
+ str- 7
+ def - 3
+
+ axe - 7
+ sword - 6
+
+ 7+7 -3 = 11
+
+ 3. game balance try abit
+ make item effects animation conme 
+ item not working
+ might be easier to make items as weapons tbh
+ Need to check how to implement aura abilities
+
+ converted item to weapons lets see if animation are different
+
+ before that check states
+ it work but make weapon durability low
+
+4. fix game not end - done
+ made effect targets
+ make algo scale off mag
+
+ 5.it works but two animations overlap
+ also double check if battle happens
+ change from staff to item
+
+ effective is too strong
+
+ 6. add kneelshot
